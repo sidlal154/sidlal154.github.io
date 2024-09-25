@@ -6,49 +6,98 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Siddharth Lal - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <!--
+    This favicon was generated using the following graphics from Twitter Twemoji:
+    - Graphics Title: 1f5a5.svg
+    - Graphics Author: Copyright 2020 Twitter, Inc and other contributors (https://github.com/twitter/twemoji)
+    - Graphics Source: https://github.com/twitter/twemoji/blob/master/assets/svg/1f5a5.svg
+    - Graphics License: CC-BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
+    -->
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png">
+    <!-- Font Awesome for Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="container">
         <header>
             <div class="photo">
-                <img src="photo.jpg" alt="Siddharth Lal's Photo">
+                <img src="images/photo.jpg" alt="Siddharth Lal's Photo">
             </div>
             <div class="intro">
                 <h1>Siddharth Lal</h1>
-                <p>I'm a passionate software engineer with expertise in Distributed Systems, Blockchain, and Backend development. Explore my work experience, projects, and skills below!</p>
+                <p>I'm a passionate software engineer with 5 years of experience in Distributed Systems, Blockchain, and Backend Development. Currently pursuing a Master’s degree at the University of Illinois Urbana-Champaign, I will be graduating in December 2024. I am actively seeking full-time software engineering roles starting in January 2025.
+                </p>
+                <!-- Contact Details Section -->
+                <div class="contact-details">
+                    <p><strong>Email:</strong> <a href="mailto:sl203@illinois.edu">sl203@illinois.edu</a></p>
+                    <p><strong>Phone:</strong> +1 (217) 766-5407</p>
+                </div>
+
+                <!-- Social Media Links with Icons -->
+                <div class="social-links">
+                    <a href="https://github.com/sidlal154" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/siddharthlal154/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+
                 <div class="links">
-                    <a href="https://github.com/sidlal154" target="_blank">GitHub</a>|
-                    <a href="resume.pdf" target="_blank">Resume</a>|
-                    <a href="about.pdf" target="_blank">About Me</a>
+                    <a href="resume.pdf" target="_blank">Resume</a> |
+                    <a href="about.pdf" target="_blank">About</a>
                 </div>
             </div>
         </header>
 
         <section class="content">
+
+            <!-- Work Experience Section -->
             <div class="tile">
                 <h2>Work Experience</h2>
                 <ul>
-                    <li><strong>Software Engineer Intern</strong> @ Motorola Solutions (2024)</li>
-                    <li><strong>Senior Software Developer</strong> @ Sears Transformco (2022-2023)</li>
-                    <li><strong>Senior Software Engineer</strong> @ Samsung Research (2020-2022)</li>
-                    <li><strong>Software Engineer</strong> @ Samsung Research (2018-2020)</li>
+                    <li><a href="#" class="modal-link" data-modal="modal1">Software Engineer Intern @ Motorola Solutions (May '24 - July '24')</a></li>
+                    <li><a href="#" class="modal-link" data-modal="modal2">Senior Software Developer @ Sears Transformco (2022-2023)</a></li>
+                    <li><a href="#" class="modal-link" data-modal="modal3">Senior Software Engineer @ Samsung Research (2020-2022)</a></li>
+                    <li><a href="#" class="modal-link" data-modal="modal4">Software Engineer @ Samsung Research (2018-2020)</a></li>
                 </ul>
             </div>
 
-            <div class="tile">
-                <h2>Education</h2>
-                <ul>
-                    <li><strong>Master's in Computer Science</strong>, University of Illinois Urbana-Champaign (2023-2024)
-                    <i>Teaching Assistant for CS425: Distributed Systems and CS444: Deep learning for Computer Vision</i></li>
-                    <li><strong>Bachelor's in Electrical Engineering</strong>, IIT Kanpur (2014-2018)</li>
-                </ul>
+            <!-- Modals for Work Experience Details -->
+            <div id="modal1" class="modal">
+                <div class="modal-content">
+                    <span class="close" data-close="modal1">&times;</span>
+                    <h2>Software Engineer Intern @ Motorola Solutions (May '2024 - July '2024')</h2>
+                    <p>Designed APIs to automate interoperability requests across Radio groups on the Motorola Critical Connect Portal, reducing onboarding time by 4x, and developed a relational data model to streamline request management.</p>
+                </div>
             </div>
+
+            <div id="modal2" class="modal">
+                <div class="modal-content">
+                    <span class="close" data-close="modal2">&times;</span>
+                    <h2>Senior Software Developer @ Sears Transformco (2022-2023)</h2>
+                    <p>Led the implementation of an Event Ticketing Web Marketplace, wrote optimized smart contracts in Solidity, and deployed them on the Polygon TestNet, reducing deployment cost by around 50x.</p>
+                </div>
+            </div>
+
+            <div id="modal3" class="modal">
+                <div class="modal-content">
+                    <span class="close" data-close="modal3">&times;</span>
+                    <h2>Senior Software Engineer @ Samsung Research (2020-2022)</h2>
+                    <p>Led the development of a mobile-based Distributed File System as part of Samsung’s lightweight blockchain framework, leveraging sharding techniques and ensuring high availability through data replication.</p>
+                </div>
+            </div>
+
+            <div id="modal4" class="modal">
+                <div class="modal-content">
+                    <span class="close" data-close="modal4">&times;</span>
+                    <h2>Software Engineer @ Samsung Research (2018-2020)</h2>
+                    <p>Developed a platform aimed at making data sharing between data warehouses and service provider partners transparent and traceable via the Hyperledger Fabric blockchain, enhancing secure sharing by 50%.</p>
+                </div>
+            </div>
+
 
             <div class="tile">
                 <h2>Skills</h2>
                 <ul>
                     <li>Programming: Go, Python, Java, C++, Solidity, JavaScript, TypeScript, SQL</li>
-                    <li>Frameworks: Angular, Flask</li>
+                    <li>Frameworks: Linux, Android, Angular, Flask, React, NextJS</li>
                     <li>Technologies: Docker, Kubernetes, AWS</li>
                 </ul>
             </div>
@@ -66,5 +115,6 @@
             </div>
         </section>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
